@@ -1,0 +1,15 @@
+{
+  "name": "node-koa-server",
+  "version": "1.0.0",
+  "description": "다양한 학습하기 위한 실습용 코드",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "author": "jeffchoi",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
+  }
+}
