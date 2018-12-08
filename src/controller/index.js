@@ -1,20 +1,19 @@
-const userList = [
-  { id: '1', name: '최영훈A', engName: 'JeffChoi' },
-  { id: '2', name: '최영훈B', engName: 'JeffChoi' },
-  { id: '3', name: '최영훈C', engName: 'JeffChoi' },
-];
+const models = require('../database/models');
 
-const getUsers = (ctx) => {
-  ctx.body = userList;
+const getUsers = async (ctx) => {
+  const users = await models.User.findAll();
+  ctx.body = users;
 };
 
-const getUser = (ctx) => {
+const getUser = async (ctx) => {
   const { id } = ctx.params;
 
-  ctx.body = userList.filter((user) => user.id === id);
+  const users = await models.User.findOne({ where: { id } });
+  ctx.body = users;
 };
 
 module.exports = {
   getUsers,
   getUser
 };
+
