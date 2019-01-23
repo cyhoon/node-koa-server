@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon ./src/server.js",
-    "start": "pm2 start ./src/server.js"
+    "start": "pm2 start ./src/server.js",
+    "test": "exit"
   },
   "author": "jeffchoi",
   "license": "MIT",
