@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon ./src/server.js",
+    "prod": "node ./src/server.js",
     "start": "pm2 start ./src/server.js",
     "test": "exit"
   },
