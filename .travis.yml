@@ -34,7 +34,7 @@ deploy: # 배포
     region: ap-northeast-2
     wait-until-deployed: true
     on:
-      repo: jeffchoi72/node-koa-server
+      repo: jeffchoi72/node-koa-server #Github 주소
       branch: master
 notifications:
   email:
